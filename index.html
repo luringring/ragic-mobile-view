@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大牛米數表</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        main {
+            padding: 1em;
+        }
+        #ragic_webview {
+            min-height: 600px;
+            background-color: white;
+        }
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #eee;
+            font-size: 0.9em;
+        }
+        a#ragic-link {
+            display: block;
+            margin-top: 1em;
+            text-align: center;
+            color: #333;
+            font-size: 0.9em;
+        }
+
+        /* 手機優化 */
+        @media (max-width: 600px) {
+            main {
+                padding: 0.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>大牛米數表</h1>
+    </header>
+
+    <main>
+        <div id="ragic_webview"></div>
+        <noscript>
+            請啟用 JavaScript 以查看 
+            <a href="https://www.ragic.com/?ref_noscript">Ragic 線上資料庫表單</a>。
+        </noscript>
+        <a href="https://www.ragic.com" id="ragic-link">online database form by <span class="logo-ragic">Ragic</span></a>
+    </main>
+
+    <footer>
+        &copy; 2025 公司名稱
+    </footer>
+
+    <script>
+        var ragic_url = 'ap14.ragic.com/luringring/company-shared-information/2';
+        var ragic_feature = 'fts';
+        var ragic_embedtype = '';
+        var exactMatch = true;
+        var pfv = [];
+
+        var applyDefaultView = false;
+        var showSheetName = false;
+
+        (function () {
+            var rq = document.createElement('script');
+            rq.type = 'text/javascript';
+            rq.async = true;
+            rq.src = "https://ap14.ragic.com/intl/common/loadfts.js";
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(rq);
+        })();
+    </script>
+
+</body>
+</html>
